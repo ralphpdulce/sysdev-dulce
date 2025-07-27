@@ -1,0 +1,86 @@
+/* Website font */
+/* Remove spacing around page */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Define header size, color, and width */
+header{
+    z-index: 5;
+    background-color: #fafafccc;
+    position: sticky;
+    border-style: solid;
+    border-width: 0.1px;
+    border-color: rgb(216, 216, 216);
+}
+
+/* Apple logo */
+
+#logo{
+    width:1rem;
+    margin-top:-0.2rem;
+}
+
+/* Navigation links */
+
+.navlinks{
+    padding: 0.2rem 0;
+    width: 90%;
+    margin: 1rem auto;
+    padding: 0 0rem;
+}
+
+.navlinks ul {
+    display: flex;
+    width:80%;
+    justify-content: space-between;
+    align-content: center;
+    margin: auto;
+}
+
+.navlinks li{
+    font-family: "SF Pro Text";
+    font-weight: 500;
+    font-size: 0.75rem;
+    list-style-type: none;
+    color: rgb(36, 36, 36);
+}
+
+.navlinks ul i{
+    font-size: 0.8rem;
+    margin: 0rem auto;
+    transform: translateY(-0.25rem);
+}
+
+/* Styles for subheader */
+
+.subheader{
+    width: 72%;
+    margin: 0 auto 0;
+    padding: 0.7rem 0 0.5rem;
+}
+
+
+.subheader ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+#current-page{
+    font-weight: 600;
+    font-size: 1.3rem;
+    color: #030303cc;
+}
+
+#browse-items{
+    font-size: small;
+    color:rgb(78, 78, 78);
+    margin: 0.5rem -0.1rem;
+}
+
+#browse-items i{
+    font-size: 0.5rem;
+    margin: 0 0.2rem ;
+}
