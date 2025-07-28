@@ -1,0 +1,19 @@
+.content-container{
+    display:flex;
+    flex-direction: row;
+    padding: 2rem 3rem;
+}
+
+/* Left container */
+.left-container{
+
+}
+
+/* Right container */
+.right-container{
+    overflow:hidden;
+}
+
+.right-container img{
+    height:20rem;
+}
