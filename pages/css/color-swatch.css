@@ -1,0 +1,126 @@
+/* INDEX PAGE SWATCH PREVIEW */
+
+.color-swatch-container-index{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    margin:0;
+    height: 10px;
+    gap: 10px;
+    padding: 1rem 0;
+}
+
+.color-swatch-index{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size:15px;
+    height: 12px;
+    width: 12px;
+    border-radius: 100%;
+    position: relative;
+}
+
+/* PRODUCT PAGE SELECTOR */
+
+.color-swatch-selector-container{
+    position: relative;
+    margin: 0 -2rem -2rem;
+    padding: 2rem;
+}
+
+.color-swatch-selector-wrapper{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(2, auto);
+    justify-content: space-between;
+    align-content: center;
+    margin: 2rem -0.8rem 0;
+    padding: 1rem;
+    width: fit-content;
+    gap: 1rem;
+}
+
+.color-swatch {
+    cursor: pointer;
+    height: 28px;
+    width: 28px;
+    border-radius: 100%;
+    position: relative; 
+    overflow: hidden;
+}
+
+
+/* Color swatches - 16 Plus Silicone Cases*/
+
+#periwinkle{
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.1));
+    background-color: #7a87bd;
+}
+
+#peony{
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.1));
+    background-color: #ed8fc0;
+}
+
+#aquamarine{
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.1));
+    background-color: #d6e48d;
+}
+
+#tangerine{
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.1));
+    background-color: #ec806b;
+}
+
+#star-fruit{
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.1));
+    background-color: #ecce1f;
+}
+
+#ultramarine{
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.1));
+    background-color: #3d4584;
+}
+
+#lake-green{
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.1));
+    background-color: #5d6b6b;
+}
+
+#fuschia{
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.1));
+    background-color: #94456a;
+}
+
+#plum{
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.1));
+    background-color: #4e3d4b;
+}
+
+#black{
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.1));
+    background-color: #2f3035;
+}
+
+#stone-gray{
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.1));
+    background-color: #6a6865;
+}
+
+#denim{
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.1));
+    background-color: #545f6f;
+}
+
+/* Color swatches - 16e Silicone Cases */
+
+#white{
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.1));
+    background-color: white;
+}
+
+#winter-blue{
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.1));
+    background-color: #7e95b2;
+}

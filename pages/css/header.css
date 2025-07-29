@@ -8,9 +8,7 @@
 
 /* Define header size, color, and width */
 header{
-    z-index: 5;
     background-color: #fafafccc;
-    position: sticky;
     border-style: solid;
     border-width: 0.1px;
     border-color: rgb(216, 216, 216);
@@ -57,6 +55,8 @@ header{
 /* Styles for subheader */
 
 .subheader{
+    position:sticky;
+    top: 0;
     width: 72%;
     margin: 0 auto 0;
     padding: 0.7rem 0 0.5rem;

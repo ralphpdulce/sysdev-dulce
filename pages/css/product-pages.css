@@ -1,19 +1,234 @@
 .content-container{
     display:flex;
     flex-direction: row;
-    padding: 2rem 3rem;
+    padding: 3rem 6rem;
 }
 
 /* Left container */
 .left-container{
+    margin: auto;
+    display: flex;
+    width: 30%;
+}
 
+.pricing{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 0.8rem;
+    margin:1rem 0;
+    padding-bottom: 2rem;
+    font-size: 1rem;
+}
+
+.pricing a{
+    display:block;
+    margin-top: -2rem;
+}
+
+/* Dropdown container */
+.dropdown-wrapper {
+    position: relative;
+    width: 348px;
+    user-select: none;
+}
+
+.dropdown-display {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    padding: 8px 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+    cursor: pointer;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    min-height: 48px;
+    position: relative;
+    line-height: 1.2;
+}
+
+.dropdown-display:focus {
+    outline: none;
+    border-width: 2px;
+    border-color: #007bff; /* Blue border on focus */
+}
+
+.dropdown-placeholder-label {
+    font-size: 12px;
+    color: #888;
+    margin-bottom: 2px;
+}
+
+.selected-value {
+    font-size: 17px;
+    color: #333;
+    font-weight: normal;
+}
+
+.dropdown-arrow {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #333; /* Down arrow */
+    pointer-events: none; /* Make sure arrow doesn't block clicks */
+}
+
+/* Options List */
+.dropdown-options {
+    list-style: none;
+    padding: 0;
+    margin: 5px 0 0 0; /* Space below the display box */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+    max-height: 200px; /* Limit height and allow scrolling */
+    overflow-y: auto;
+    display: none; /* Hidden by default, shown by JS */
+}
+
+.dropdown-options.show {
+    display: block; /* Shown when JavaScript adds this class */
+}
+
+.dropdown-options li {
+    padding: 10px 15px;
+    font-size: 16px;
+    color: #333;
+    cursor: pointer;
+}
+
+.dropdown-options li:hover,
+.dropdown-options li.highlighted { /* For keyboard navigation hover/focus */
+    background-color: #f0f0f0; /* Light gray on hover */
+}
+
+.dropdown-options li.selected {
+    background-color: #e0e0e0; /* Darker gray for the already selected item in the list */
+    font-weight: 500; /* Optionally make it slightly bolder */
+}
+
+/* Purchase container */
+.purchase-container{
+    margin-top:2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.installment-condition{
+    font-size: 14px;
+    font-weight:200;
+}
+
+.delivery{
+    display:flex;
+    flex-direction: column;
+}
+
+.delivery-pickup-header{
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    margin-left:-1.9rem;
+}
+
+.delivery i{
+    font-size:1.1rem;
+}
+
+.delivery-pickup{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 1rem;
+    margin: 1.5rem 1.5rem;
+}
+
+
+.delivery-pickup a{
+    margin-left: -0.1rem;
+}
+
+/* Button container */
+.button-container{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+button{
+    color: white;
+    padding: 0.6rem;
+    border-radius: 8px;
+    border: none;
+    font-family: "SF Pro Text";
+    font-size: 15px;
+    cursor: pointer;
+}
+
+#check-out{
+    background-color: black;
+}
+
+#add-to-bag{
+    background-color: #06c;
+}
+
+.save-container{
+    margin-top: -0.5rem;
+    margin-bottom: 2rem;
+}
+
+.save-item{
+    display:flex;
+    flex-direction: column;
+    justify-content: left;
+    gap:0.4rem;
+    font-size: 0.9rem;
+}
+
+.save-item i{
+    font-size:15px;
+}
+
+.save-item a{
+    padding-top: 0.5rem;
+    text-align: left;
+}
+
+.contact-us{
+    display: flex;
+    flex-direction: row;
+    gap: 0.2rem;
+}
+
+.contact-us span{
+    font-size: 15px;
+    transform: translateY(0.25rem)translateX(0.1rem);
 }
 
 /* Right container */
 .right-container{
-    overflow:hidden;
+    margin: auto;
+    display: flex;
+    justify-content:center;
 }
 
 .right-container img{
-    height:20rem;
+    height:30rem;
 }
+

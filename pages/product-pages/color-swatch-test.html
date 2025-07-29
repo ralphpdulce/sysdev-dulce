@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/pages/css/color-swatch-test.css">
+    <title>Color Swatch Test</title>
+</head>
+
+<body>
+    <div class="color-swatch-container" id="16plus">
+        <div class="color-swatch" id="periwinkle"></div>
+        <div class="color-swatch" id="peony"></div>
+        <div class="color-swatch" id="aquamarine"></div>
+        <div class="color-swatch" id="tangerine"></div>
+        <div class="color-swatch" id="ultramarine"></div>
+        <div class="color-swatch" id="lake-green"></div>
+        <div class="color-swatch" id="fuschia"></div>
+        <div class="color-swatch" id="plum"></div>
+        <div class="color-swatch" id="black"></div>
+        <div class="color-swatch" id="stone-gray"></div>
+        <div class="color-swatch" id="denim"></div>
+    </div>
+    
+</body>
+
+<script>
+        // This JavaScript block is essential for the ring to show up
+        document.addEventListener('DOMContentLoaded', () => {
+            const colorSwatches = document.querySelectorAll('.color-swatch');
+
+            colorSwatches.forEach(swatch => {
+                swatch.addEventListener('click', () => {
+                    // Remove 'selected' class from any currently selected swatch
+                    const currentSelected = document.querySelector('.color-swatch.selected');
+                    if (currentSelected) {
+                        currentSelected.classList.remove('selected');
+                    }
+                    
+                    // Add 'selected' class to the clicked swatch
+                    swatch.classList.add('selected');
+                });
+            });
+        });
+    </script>
+</html>

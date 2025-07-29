@@ -1,0 +1,92 @@
+.color-swatch-container{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(2, auto);
+    justify-content: space-between;
+    align-content: center;
+    margin: auto;
+    width: fit-content;
+    gap: 2rem;
+}
+
+.color-swatch {
+    height: 80px;
+    width: 80px;
+    border-radius: 100%;
+    position: relative; 
+    overflow: hidden;
+}
+
+
+.color-swatch:hover{
+    cursor: pointer;
+}
+
+.color-swatch.selected {
+    outline: 2px solid #06c; 
+    outline-offset: 3px;
+    transition: outline 0.2s ease-in-out;
+}
+
+/* Hover effect */
+.color-swatch:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: transform 0.2s ease-in-out;
+}
+
+
+#periwinkle{
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.1));
+    background-color: #7a87bd;
+}
+
+#peony{
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.1));
+    background-color: #ed8fc0;
+}
+
+#aquamarine{
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.1));
+    background-color: #d6e48d;
+}
+
+#tangerine{
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.1));
+    background-color: #ec806b;
+}
+
+#ultramarine{
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.1));
+    background-color: #3d4584;
+}
+
+#lake-green{
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.1));
+    background-color: #5d6b6b;
+}
+
+#fuschia{
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.1));
+    background-color: #94456a;
+}
+
+#plum{
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.1));
+    background-color: #4e3d4b;
+}
+
+#black{
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.1));
+    background-color: #2f3035;
+}
+
+#stone-gray{
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.1));
+    background-color: #6a6865;
+}
+
+#denim{
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.1));
+    background-color: #545f6f;
+}

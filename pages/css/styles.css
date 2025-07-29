@@ -28,12 +28,11 @@ a{
 }
 
 .message a{
-    margin-left:-2rem;
+    margin:0;
 }
 
 /* Hyperlinks*/
 .hyperlink{
-    padding: 2rem;
     text-align: center;
     color:#06c;
 }
@@ -45,4 +44,8 @@ a{
 
 .hyperlink i{
     font-size: 0.7rem;
+}
+
+ul{
+    list-style-type: none;
 }
