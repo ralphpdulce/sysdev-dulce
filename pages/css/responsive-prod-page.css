@@ -1,0 +1,211 @@
+@media (max-width: 1024px){
+    .content-container{
+        padding: 4rem;
+    }
+
+    .left-container{
+        margin: auto 0 auto 0;
+        width: 50%
+    }
+
+    .right-container{
+        margin:auto;
+        padding-left: 6rem;
+    }
+}
+
+@media (max-width: 768px){
+    .message p{
+        line-height: 1.5em;
+    }
+
+    .message .hyperlink i{
+        margin: 0;
+        transform: translateY(0);
+    }
+
+    .content-container{
+        flex-direction: column;
+        padding: 1rem;
+        align-items: flex-start;
+    }
+
+
+    .product-pricing{
+        display: block;
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 1rem;
+        padding: 1rem;
+    }
+
+    .product-pricing h1{
+        max-width: 100%;
+    }
+
+    .left-container {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .purchase-container{
+        max-width: 90%;
+        margin: auto;
+    }
+
+
+    .product-pricing h1,
+    .dropdown-wrapper,
+    .purchase-container,
+    .save-container,
+    .contact-us {
+        margin: auto;
+    }
+
+    .product-pricing h1{
+        width:100%;
+    }
+
+    .pricing {
+        display: flex;
+        flex-direction: column; /* Stack children vertically */
+        justify-content: flex-start; /* Align children to the start (left) */
+        align-items: flex-start; /* Align items to the start (left) */
+        gap: 0.8rem;
+        margin: 1rem 0;
+        padding-bottom: 2rem;
+        font-size: 1rem;
+        width: 100%; /* Ensure pricing div takes full width */
+        /* Removed text-align: left; as flexbox will control alignment */
+    }
+
+    .pricing p {
+        /* Ensure default margins/paddings don't push them around */
+        margin: 0;
+        padding: 0;
+    }
+
+    .product-image-mobile {
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin: 0 auto 1.5rem;
+    }
+
+    .product-image-mobile img {
+        display:block;
+        justify-content: center;
+        height: 26rem;
+        object-fit: contain;
+        max-width: 100%; /* Important: Ensures the image doesn't overflow its container */
+        width: auto;
+        transform: none; 
+        margin: 0 7rem;
+    }
+
+    /* Dropdown container */
+    .dropdown-wrapper{
+        margin: 2rem auto;
+        width:90%;
+    }
+
+    .color-swatch-selector-container{
+        display: flex;
+        gap:0.5rem;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin: 1rem 0;
+        width: 100%;
+        margin: 0;
+        padding: 3rem 1rem 1rem;
+    }
+
+    .selected-color{
+        font-size:20px;
+    }
+
+    .color-swatch{
+        flex-shrink: 0;
+        width: 30px;
+        height: 30px;
+        border-radius: 100%;
+    }
+
+    /* Color swatch */
+    .color-swatch-selector-wrapper{
+        display:flex;
+        align-items:flex-start;
+        justify-content: flex-start;
+        padding-top: 0;
+        flex-wrap:wrap;
+    }
+
+
+    .pricing a{
+        display: flex; /* Keep flex to align text and icon */
+        align-items: center; /* Vertically align icon with text */
+        white-space: nowrap; /* Prevent line breaks within the link */
+        width: auto;
+        margin-top: 0;
+    }
+
+    .pricing > .hyperlink i{
+        font-size: 12px;
+        margin-top:0;
+        transform: none;
+    }
+
+    .product-pricing h1{
+        width: 100%;
+        font-size: 23px;
+    }
+
+    .hyperlink i{
+        margin:0;
+    }
+
+    hr,
+    .installment-condition,
+    button,
+    .save-item{
+        width:100%;
+    }
+
+    .installment-condition{
+        line-height: 1.5;
+    }
+
+    .contact-us {
+        display: flex;
+        flex-direction: row; /* Ensure it's still a row */
+        gap: 0.2rem;
+        align-items: center; /* Vertically align items in the center */
+    }
+
+    .contact-us h4 {
+        display: inline; /* Make the h4 behave like inline text within the flex item */
+        margin: 0; /* Remove default margins of h4 */
+        padding: 0; /* Remove default padding of h4 */
+        white-space: nowrap; /* Prevent "Need some help?" from breaking */
+    }
+
+    .contact-us a {
+        display: inline-flex; /* Keep it inline but allow flex properties for the span */
+        align-items: center; /* Vertically align the text and icon within the link */
+        gap: 0.2rem;
+       white-space: nowrap; /* Add a small gap between "Contact us" and the arrow icon */
+    }
+
+    /* Adjust the icon's positioning if necessary */
+    .contact-us span.material-symbols-outlined {
+        font-size: 15px; /* Keep consistent with your existing style */
+        /* You might want to remove or adjust the transform on the span */
+        transform: translateY(0.1rem); /* Slight adjustment, or remove entirely if perfect */
+        display: inline-block; /* Helps with vertical alignment and transforms */
+    }
+
+    .right-container {
+        display: none;
+    }
+}

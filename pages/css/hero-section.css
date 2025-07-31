@@ -1,0 +1,46 @@
+.hero-section {
+    display: grid;
+    grid-template-columns: 1fr auto auto 1fr; /* outer columns flexible */
+    align-items: stretch;
+    height: 50vh;
+    width: 100%;
+    overflow: hidden;
+    background-color: #f5f5f5;
+}
+
+.left-container {
+    margin: auto;
+    grid-column: 2;
+    max-width: 33.33333333%
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap:1rem;
+    margin: auto;
+}
+
+.description h1{
+    font-size: clamp(1.5rem, 3vw, 2.5rem); /* min 1.5rem, ideal 3vw, max 2.5rem */
+}
+
+.accessories-desc{
+    font-size: clamp(0.875rem, 1.5vw, 1.1rem);
+    line-height: 1.4;
+    max-width: 30rem;
+}
+
+.right-container {
+    display: flex;
+    grid-column: 3;
+    max-width: 66.6666666%
+}
+
+.right-container img{
+    height:50vh;
+    width: auto;
+    object-fit: cover;
+    display: block;
+}

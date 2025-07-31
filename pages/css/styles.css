@@ -7,7 +7,9 @@
 
 body{
     font-family: "SF Pro Text";
+    padding-bottom: 2rem;
 }
+
 
 a{
     color:inherit;
@@ -25,10 +27,15 @@ a{
 
 .message p{
     margin:auto;
+    text-align: center;
 }
 
 .message a{
     margin:0;
+}
+
+.product-image-mobile, .product-image-mobile img{
+    display:none;
 }
 
 /* Hyperlinks*/
@@ -43,7 +50,7 @@ a{
 }
 
 .hyperlink i{
-    font-size: 0.7rem;
+    font-size: 0.6rem;
 }
 
 ul{

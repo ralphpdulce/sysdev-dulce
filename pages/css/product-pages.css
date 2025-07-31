@@ -1,7 +1,8 @@
 .content-container{
     display:flex;
     flex-direction: row;
-    padding: 3rem 6rem;
+    padding: 4rem;
+    margin: auto;
 }
 
 /* Left container */
@@ -9,6 +10,10 @@
     margin: auto;
     display: flex;
     width: 30%;
+}
+
+.product-pricing h1{
+    max-width: 300px;
 }
 
 .pricing{
@@ -23,13 +28,13 @@
 
 .pricing a{
     display:block;
-    margin-top: -2rem;
+    text-align: start;
 }
 
 /* Dropdown container */
 .dropdown-wrapper {
     position: relative;
-    width: 348px;
+    width: 100%;
     user-select: none;
 }
 
@@ -144,10 +149,6 @@
     margin-left:-1.9rem;
 }
 
-.delivery i{
-    font-size:1.1rem;
-}
-
 .delivery-pickup{
     display:flex;
     flex-direction: column;
@@ -160,6 +161,7 @@
 .delivery-pickup a{
     margin-left: -0.1rem;
 }
+
 
 /* Button container */
 .button-container{
@@ -226,9 +228,12 @@ button{
     margin: auto;
     display: flex;
     justify-content:center;
+    align-items: center;
 }
 
 .right-container img{
+    object-fit: cover;
+    object-position: center center;
     height:30rem;
 }
 
