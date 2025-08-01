@@ -104,7 +104,7 @@ document.addEventListener('DOMContentLoaded', function() {
     //If button is clicked, redirect to stage 1
     if (addToBag){
         addToBag.addEventListener('click', function() {
-            window.location.href= '/pages/index.html';
+            window.location.href= 'sysdev-dulce/pages/index.html';
         });
     }
 });
